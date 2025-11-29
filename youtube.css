@@ -1,0 +1,284 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* HEADER MAIN */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 15px;
+    position: sticky;
+    top: 0px;
+    background-color: white;
+}
+
+/* LEFT SECTION */
+.header-left {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.header-left img {
+    height: 50px;
+    width: 100px;
+}
+
+#menu {
+    font-size: 30px;
+    cursor: pointer;
+}
+
+#menu:hover {
+    background-color: #e5e5e5;
+}
+
+/* MID SECTION (SEARCH AREA) */
+.header-mid {
+    display: flex;
+    align-items: center;
+    gap: 0;
+}
+
+.header-mid input {
+    height: 36px;
+    width: 350px;
+    border: 2px solid gray;
+    border-right: none;
+    /* JOIN with search button */
+    border-radius: 20px 0 0 20px;
+    padding: 0 12px;
+    font-size: 16px;
+}
+
+#search {
+    height: 36px;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid gray;
+    border-left: none;
+    /* CONNECTS to input */
+    border-radius: 0 20px 20px 0;
+    cursor: pointer;
+    background-color: #f0f0f0;
+}
+
+#search:hover {
+    background-color: #e5e5e5;
+}
+
+#mic {
+    background-color: rgb(230, 224, 224);
+    height: 36px;
+    width: 36px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+#mic:hover {
+    background-color: #e3e3e3;
+}
+
+/* RIGHT SECTION */
+.header-right {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+/* CREATE BUTTON */
+.create {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding: 8px 15px;
+    background-color: gray;
+    color: white;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.create:hover {
+    background-color: #e5e5e5;
+    color: black;
+}
+
+/* ICON INSIDE CREATE */
+#add {
+    font-size: 24px;
+}
+
+#notifi {
+    height: 36px;
+    width: 36px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    background-color: rgb(229, 218, 218);
+    border-radius: 50%;
+
+}
+
+#notifi:hover {
+    background-color: #dedede;
+}
+
+#profile {
+    height: 36px;
+    width: 36px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+
+.body {
+    display: flex;
+    align-content: center;
+}
+
+
+
+
+/* MAIN SIDEBAR WRAPPER */
+.side-bars {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+    margin-top: 5px;
+}
+
+/* FIRST SECTION (Home, Trending) */
+.side-bar {
+    display: flex;
+    flex-direction: column;
+    row-gap: 5px;
+    padding-bottom: 15px;
+    border-bottom: 2px solid gray;
+}
+
+/* COMMON STYLES FOR MENU ROWS */
+#home,
+#trend,
+#history,
+#PlayList,
+#WatchLater,
+#Like-video,
+#Your-video,
+#show,#explore_title,
+#shopping,
+#music,
+#movie,
+#setting,
+#flag,
+#help,
+#feedback{
+    display: flex;
+    align-items: center;
+    column-gap: 8px;
+    padding: 6px 5px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+#home:hover,
+#trend:hover,
+#history:hover,
+#PlayList:hover,
+#WatchLater:hover,
+#Like-video:hover,
+#Your-video:hover{
+    background-color: #f0f0f0;
+}
+
+/* SUBSCRIPTIONS SECTION */
+#Subscription {
+    padding: 20px 0px;
+    border-bottom: 2px solid gray;
+}
+
+/* INDIVIDUAL SUB ITEM */
+#sub-ele {
+    display: flex;
+    box-sizing: content-box;
+    align-items:center;
+    column-gap: 10px;
+    padding: 6px 10px;
+    font-size: 16px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+#sub-ele:hover {
+    background-color: #f0f0f0;
+}
+
+/* SUB PROFILE ICON */
+#sub-ele > img {
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+}
+
+/* SUBS TITLE */
+#title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 10px;
+}
+
+#title > h2 {
+    font-size: 16px;
+    padding: 10px 0;
+}
+
+/* LIVE SYMBOL */
+#live-sym {
+    color: red;
+    font-size: 20px;
+}
+
+/* SHOW MORE ROW */
+#show {
+    margin-top: 10px;
+    display: flex;
+    font-size: 18px;
+    column-gap: 5px;
+    cursor: pointer;
+}
+
+#show:hover {
+    background-color: #f0f0f0;
+}
+
+/* FIXED TYPO */
+#show-down {
+    height: 25px;
+    width: 25px;
+}
+
+/* "YOU" SECTION TITLE */
+#store-title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 0px;
+}
+
+#storedPage,#explore{
+    border-bottom:solid gray 2px;
+}
+
+
